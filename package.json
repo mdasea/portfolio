@@ -7,12 +7,17 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "nuxt build -- --preset=firebase && firebase deploy"
   },
   "dependencies": {
     "nuxt": "^3.16.0",
     "nuxt-app": "file:",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "firebase-functions": "latest",
+    "firebase-tools": "latest"
   }
 }
