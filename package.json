@@ -11,6 +11,7 @@
     "deploy": "nuxt build -- --preset=firebase && firebase deploy"
   },
   "dependencies": {
+    "@nuxt/ui": "^3.0.0",
     "nuxt": "^3.16.0",
     "nuxt-app": "file:",
     "vue": "^3.5.13",
